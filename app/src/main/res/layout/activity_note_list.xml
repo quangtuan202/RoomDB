@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/text_view_tool_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Notes"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_xlarge"
+        android:layout_marginRight="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_xxxxxxxxlarge"
+        android:drawableTop="@drawable/ic_empty"
+        android:gravity="center"
+        android:text="@string/empty_notes"
+        android:textColor="@color/line"
+        android:textSize="@dimen/font_medium_large"
+        app:textFontPath="fonts/montserrat_light.otf" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#fcba03"
+        android:contentDescription="Add"
+        android:layout_margin="16dp" />
+
+</LinearLayout>
